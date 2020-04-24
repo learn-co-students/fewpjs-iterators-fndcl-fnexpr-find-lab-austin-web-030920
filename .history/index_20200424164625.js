@@ -7,9 +7,11 @@ function testFunc() {
 
 function superbowlWin(array) {
   let victory = array.find(function(game) {return game.result === "W"});
-  if (!!victory) {
-    return victory.year
-  } else {
-    return undefined
-  }
+  return victory;
+  
+  // if (!!victory) {
+  //   return victory.year
+  // } else {
+  //   return undefined
+  // }
 }
